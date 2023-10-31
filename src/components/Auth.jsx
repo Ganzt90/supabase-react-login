@@ -22,13 +22,13 @@ export default function Auth() {
 
     return (
         <div className="row flex flex-center">
-            <div>
+            <div style={{borderRadius: "5px", padding: "5px"}}>
                 <h1 className="header">
                     Supabase + React
                 </h1>
                 <p className="description">Sign in via magic link with you email below</p>
                 <form className="form-widget" onSubmit={handleLogin}>
-                    <div>
+                    <div style={{borderRadius: "5px", padding: "5px"}}>
                         <input 
                             className="inputField"
                             type="email"
@@ -38,8 +38,8 @@ export default function Auth() {
                         >
                         </input>
                     </div>
-                    <div>
-                        <button className={'button block'} disabled = {loading}>
+                    <div style={{borderRadius: "5px", padding: "5px"}}>
+                        <button className={'button block'} disabled = {loading} >
                             { loading ? <span>Loading</span> : <span>Send Magic Link</span>}
                         </button>
                     </div>
